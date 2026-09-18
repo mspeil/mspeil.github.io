@@ -3,18 +3,19 @@
 #
 # primary_roles / secondary_roles are lists (add/remove "- Role" lines freely).
 # result is optional -- delete the line entirely if a project has nothing to report.
-- name: "Placeholder Project One"
-  itch_url: "https://your-username.itch.io/project-one"
+- name: "Lifting Spirits - Macrow Spring Jam 2026"
+  itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/placeholder1.svg"
   primary_roles:
+    - Director
     - Producer
-    - Designer
+    - Game/Level Designer
   secondary_roles:
-    - Writer
+    - Additional programmer
   blurb: >
     A short paragraph describing the project, your contributions, and
     anything notable about how it came together. Swap this for your own text.
-  result: "Placed 3rd out of 300 entries"
+  result: "3rd place out of 209 submissions"
 
 - name: "Placeholder Project Two"
   itch_url: "https://your-username.itch.io/project-two"
