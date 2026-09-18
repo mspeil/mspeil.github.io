@@ -36,46 +36,48 @@ layout: null
       <div class="project-list">
         {% for project in site.data.projects %}
         <article class="project-item">
-          <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
-            <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
-          </a>
-          <div class="project-info">
-            <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
+          <div class="project-top">
+            <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
+              <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
+            </a>
+            <div class="project-info">
+              <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
 
-            {% if project.result %}
-            <p class="result">{{ project.result }}</p>
-            {% endif %}
+              {% if project.result %}
+              <p class="result">{{ project.result }}</p>
+              {% endif %}
 
-            {% if project.primary_roles %}
-            <div class="roles primary-roles">
-              <span class="roles-label">Primary Roles</span>
-              <ul>
-                {% for role in project.primary_roles %}
-                <li>{{ role }}</li>
-                {% endfor %}
-              </ul>
+              {% if project.primary_roles %}
+              <div class="roles primary-roles">
+                <span class="roles-label">Primary Roles</span>
+                <ul>
+                  {% for role in project.primary_roles %}
+                  <li>{{ role }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+
+              {% if project.secondary_roles and project.secondary_roles.size > 0 %}
+              <div class="roles secondary-roles">
+                <span class="roles-label">Secondary Roles</span>
+                <ul>
+                  {% for role in project.secondary_roles %}
+                  <li>{{ role }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
             </div>
-            {% endif %}
-
-            {% if project.secondary_roles and project.secondary_roles.size > 0 %}
-            <div class="roles secondary-roles">
-              <span class="roles-label">Secondary Roles</span>
-              <ul>
-                {% for role in project.secondary_roles %}
-                <li>{{ role }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-            {% endif %}
-
-            {% if project.blurb %}
-            <p class="blurb">{{ project.blurb }}</p>
-            {% endif %}
-
-            {% if project.gdd_url %}
-            <p class="gdd-link"><a href="{{ project.gdd_url | relative_url }}" target="_blank" rel="noopener">Game Design Document</a></p>
-            {% endif %}
           </div>
+
+          {% if project.blurb %}
+          <p class="blurb">{{ project.blurb }}</p>
+          {% endif %}
+
+          {% if project.gdd_url %}
+          <p class="gdd-link"><a href="{{ project.gdd_url | relative_url }}" target="_blank" rel="noopener">Game Design Document</a></p>
+          {% endif %}
         </article>
         {% endfor %}
       </div>
