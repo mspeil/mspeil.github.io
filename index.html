@@ -1,0 +1,48 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1>{{ site.title }}</h1>
+    </header>
+
+    <section class="about">
+      <!-- Replace with your real headshot, e.g. /assets/img/headshot.jpg -->
+      <img class="headshot" src="{{ '/assets/img/headshot-placeholder.svg' | relative_url }}" alt="Headshot of {{ site.title }}">
+      <div class="bio">
+        <!-- Replace this paragraph with your own bio -->
+        <p>
+          Short paragraph about who you are, what you do, and what you're
+          currently working on. Swap this text for your own bio.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        {% for project in site.data.projects %}
+        <a class="project-card" href="{{ project.itch_url }}" target="_blank" rel="noopener">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
+          <span class="project-name">{{ project.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Add one entry per project. `image` is a path under /assets/img/projects/
+# (drop the file there) or a full https:// URL to an image hosted elsewhere.
+- name: "Placeholder Project One"
+  itch_url: "https://your-username.itch.io/project-one"
+  image: "/assets/img/projects/placeholder1.svg"
+- name: "Placeholder Project Two"
+  itch_url: "https://your-username.itch.io/project-two"
+  image: "/assets/img/projects/placeholder2.svg"
+- name: "Placeholder Project Three"
+  itch_url: "https://your-username.itch.io/project-three"
+  image: "/assets/img/projects/placeholder3.svg"
