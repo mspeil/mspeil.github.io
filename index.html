@@ -31,12 +31,46 @@ layout: null
 
     <section class="projects">
       <h2>Projects</h2>
-      <div class="project-grid">
+      <div class="project-list">
         {% for project in site.data.projects %}
-        <a class="project-card" href="{{ project.itch_url }}" target="_blank" rel="noopener">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
-          <span class="project-name">{{ project.name }}</span>
-        </a>
+        <article class="project-item">
+          <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
+          </a>
+          <div class="project-info">
+            <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
+
+            {% if project.primary_roles %}
+            <div class="roles primary-roles">
+              <span class="roles-label">Primary Roles</span>
+              <ul>
+                {% for role in project.primary_roles %}
+                <li>{{ role }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if project.secondary_roles and project.secondary_roles.size > 0 %}
+            <div class="roles secondary-roles">
+              <span class="roles-label">Secondary Roles</span>
+              <ul>
+                {% for role in project.secondary_roles %}
+                <li>{{ role }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if project.blurb %}
+            <p class="blurb">{{ project.blurb }}</p>
+            {% endif %}
+
+            {% if project.result %}
+            <p class="result">{{ project.result }}</p>
+            {% endif %}
+          </div>
+        </article>
         {% endfor %}
       </div>
     </section>

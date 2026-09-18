@@ -1,11 +1,40 @@
 # Add one entry per project. `image` is a path under /assets/img/projects/
 # (drop the file there) or a full https:// URL to an image hosted elsewhere.
+#
+# primary_roles / secondary_roles are lists (add/remove "- Role" lines freely).
+# result is optional -- delete the line entirely if a project has nothing to report.
 - name: "Placeholder Project One"
   itch_url: "https://your-username.itch.io/project-one"
   image: "/assets/img/projects/placeholder1.svg"
+  primary_roles:
+    - Producer
+    - Designer
+  secondary_roles:
+    - Writer
+  blurb: >
+    A short paragraph describing the project, your contributions, and
+    anything notable about how it came together. Swap this for your own text.
+  result: "Placed 3rd out of 300 entries"
+
 - name: "Placeholder Project Two"
   itch_url: "https://your-username.itch.io/project-two"
   image: "/assets/img/projects/placeholder2.svg"
+  primary_roles:
+    - Director
+  secondary_roles:
+    - Producer
+    - Sound Design
+  blurb: >
+    A short paragraph describing the project, your contributions, and
+    anything notable about how it came together. Swap this for your own text.
+  result: "Featured on the itch.io front page"
+
 - name: "Placeholder Project Three"
   itch_url: "https://your-username.itch.io/project-three"
   image: "/assets/img/projects/placeholder3.svg"
+  primary_roles:
+    - Designer
+  secondary_roles: []
+  blurb: >
+    A short paragraph describing the project, your contributions, and
+    anything notable about how it came together. Swap this for your own text.
