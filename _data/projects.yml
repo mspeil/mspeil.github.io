@@ -5,7 +5,7 @@
 # result is optional -- delete the line entirely if a project has nothing to report.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
-  image: "/assets/img/projects/placeholder1.svg"
+  image: "/assets/img/projects/thumbnail1.png"
   primary_roles:
     - Director
     - Producer
@@ -13,8 +13,11 @@
   secondary_roles:
     - Additional programmer
   blurb: >
-    A short paragraph describing the project, your contributions, and
-    anything notable about how it came together. Swap this for your own text.
+    During an intensive two-week game jam, I led a five-person multidisciplinary team, working
+    alongside an artist, a programmer, a composer and sound designer, and a narrative writer. I
+    coordinated workflows and deliverables, maintained creative alignment using a detailed game
+    design document, and oversaw the integration and polish of each component. The finished game
+    received overwhelmingly positive feedback.
   result: "3rd place out of 209 submissions"
 
 - name: "Placeholder Project Two"
