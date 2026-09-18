@@ -3,6 +3,7 @@
 #
 # primary_roles / secondary_roles are lists (add/remove "- Role" lines freely).
 # result is optional -- delete the line entirely if a project has nothing to report.
+# gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -19,6 +20,7 @@
     design document, and oversaw the integration and polish of each component. The finished game
     received overwhelmingly positive feedback.
   result: "3rd place out of 209 submissions"
+  gdd_url: "/assets/docs/lifting-spirits-gdd.pdf"
 
 - name: "Placeholder Project Two"
   itch_url: "https://your-username.itch.io/project-two"

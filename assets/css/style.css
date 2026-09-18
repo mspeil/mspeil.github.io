@@ -166,6 +166,21 @@ header.site-header h1 {
   color: var(--accent);
 }
 
+.project-info .gdd-link {
+  margin: 4px 0 0;
+}
+
+.project-info .gdd-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+.project-info .gdd-link a:hover {
+  opacity: 0.75;
+}
+
 footer.site-footer {
   border-top: 1px solid var(--border);
   padding: 24px 0 40px;
