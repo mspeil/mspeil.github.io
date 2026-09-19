@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: var(--text);
   line-height: 1.5;
   background: #fff;
@@ -25,15 +25,43 @@ body {
 }
 
 header.site-header {
-  padding: 40px 0 20px;
+  padding: 40px 0 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 40px;
 }
 
 header.site-header h1 {
-  margin: 0;
+  margin: 0 0 20px;
   font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.site-nav .nav-tab {
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav .nav-tab:hover {
+  color: var(--text);
+}
+
+.site-nav .nav-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
 }
 
 /* About / intro section */
@@ -182,6 +210,33 @@ header.site-header h1 {
 
 .project-item .gdd-link a:hover {
   opacity: 0.75;
+}
+
+/* Economics page */
+.econ-section {
+  margin-bottom: 48px;
+}
+
+.econ-section h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.econ-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.econ-list li {
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.econ-list li:last-child {
+  margin-bottom: 0;
 }
 
 footer.site-footer {

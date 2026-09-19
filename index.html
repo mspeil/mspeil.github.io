@@ -1,91 +1,59 @@
 ---
-layout: null
+layout: default
+nav: games
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <div class="wrap">
-    <header class="site-header">
-      <h1>{{ site.title }}</h1>
-    </header>
-
-    <section class="about">
-      <img class="headshot" src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Headshot of {{ site.title }}">
-      <div class="bio">
-        <!-- Replace this paragraph with your own bio -->
-        <p>
-          Hi, I&rsquo;m Maxwell Speil. I&rsquo;m a game designer and producer completing a PhD in Applied Economics
-          at the Wharton School. I combine expertise in analytics, incentives, and complex systems with a
-          passion for making games. I&rsquo;ve led teams in game jams and independent projects shaping gameplay,
-          creative vision, and team workflow. I&rsquo;m currently developing a larger indie game and seeking
-          internships in game design and production where I can bring my analytical perspective, intellectual
-          curiosity, and problem-solving mindset to a professional development team.
-        </p>
-      </div>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        {% for project in site.data.projects %}
-        <article class="project-item">
-          <div class="project-top">
-            <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
-              <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
-            </a>
-            <div class="project-info">
-              <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
-
-              {% if project.result %}
-              <p class="result">{{ project.result }}</p>
-              {% endif %}
-
-              {% if project.primary_roles %}
-              <div class="roles primary-roles">
-                <span class="roles-label">Primary Roles</span>
-                <ul>
-                  {% for role in project.primary_roles %}
-                  <li>{{ role }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endif %}
-
-              {% if project.secondary_roles and project.secondary_roles.size > 0 %}
-              <div class="roles secondary-roles">
-                <span class="roles-label">Secondary Roles</span>
-                <ul>
-                  {% for role in project.secondary_roles %}
-                  <li>{{ role }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endif %}
-            </div>
-          </div>
-
-          {% if project.blurb %}
-          <p class="blurb">{{ project.blurb }}</p>
-          {% endif %}
-
-          {% if project.gdd_url %}
-          <p class="gdd-link"><a href="{{ project.gdd_url | relative_url }}" target="_blank" rel="noopener">Game Design Document</a></p>
-          {% endif %}
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
-    </footer>
+<section class="about">
+  <img class="headshot" src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Headshot of {{ site.title }}">
+  <div class="bio">
+    <!-- Replace this paragraph with your own bio -->
+    <p>
+      Hi, I&rsquo;m Maxwell Speil. I&rsquo;m a game designer and producer completing a PhD in Applied Economics
+      at the Wharton School. I combine expertise in analytics, incentives, and complex systems with a
+      passion for making games. I&rsquo;ve led teams in game jams and independent projects shaping gameplay,
+      creative vision, and team workflow. I&rsquo;m currently developing a larger indie game and seeking
+      internships in game design and production where I can bring my analytical perspective, intellectual
+      curiosity, and problem-solving mindset to a professional development team.
+    </p>
   </div>
-</body>
-</html>
+</section>
+
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    {% for project in site.data.projects %}
+    <article class="project-item">
+      <div class="project-top">
+        <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
+        </a>
+        <div class="project-info">
+          <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
+
+          {% if project.result %}
+          <p class="result">{{ project.result }}</p>
+          {% endif %}
+
+          {% if project.primary_roles %}
+          <div class="roles primary-roles">
+            <span class="roles-label">Primary Roles</span>
+            <ul>
+              {% for role in project.primary_roles %}
+              <li>{{ role }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if project.blurb %}
+      <p class="blurb">{{ project.blurb }}</p>
+      {% endif %}
+
+      {% if project.gdd_url %}
+      <p class="gdd-link"><a href="{{ project.gdd_url | relative_url }}" target="_blank" rel="noopener">Game Design Document</a></p>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
