@@ -66,22 +66,21 @@ header.site-header h1 {
 
 /* About / intro section */
 .about {
-  margin-bottom: 60px;
-}
-
-.about-row {
   display: flex;
   gap: 32px;
   align-items: flex-start;
+  margin-bottom: 60px;
   flex-wrap: wrap;
 }
 
 .headshot-col {
   flex-shrink: 0;
+  min-width: 0;
   width: 200px;
 }
 
 .about img.headshot {
+  display: block;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -90,7 +89,8 @@ header.site-header h1 {
 
 .about .bio {
   flex: 1;
-  min-width: 260px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .about .bio p {
@@ -98,10 +98,12 @@ header.site-header h1 {
 }
 
 .tech-kit {
-  margin: 24px 0 0;
+  margin: 32px 0 0;
+  width: 200px;
   text-align: left;
   font-size: 0.85rem;
   color: var(--muted);
+  overflow-wrap: break-word;
 }
 
 /* Projects list */
@@ -295,6 +297,10 @@ footer.site-footer {
   .about img.headshot {
     width: 140px;
     height: 140px;
+  }
+
+  .tech-kit {
+    width: 140px;
   }
 
   .project-thumb {
