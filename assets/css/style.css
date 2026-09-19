@@ -258,6 +258,18 @@ header.site-header h1 {
   margin-bottom: 0;
 }
 
+.positions-list .position-title {
+  display: block;
+}
+
+.positions-list .position-sub {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
 .econ-list a {
   color: var(--text);
   text-decoration: none;
