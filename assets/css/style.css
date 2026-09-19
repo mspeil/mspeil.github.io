@@ -73,12 +73,19 @@ header.site-header h1 {
   flex-wrap: wrap;
 }
 
+.headshot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 200px;
+}
+
 .about img.headshot {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0;
 }
 
 .about .bio {
@@ -90,8 +97,10 @@ header.site-header h1 {
   margin-top: 0;
 }
 
-.about .bio .tech-kit {
-  margin-bottom: 0;
+.tech-kit {
+  margin: 20px 0 0;
+  text-align: left;
+  font-size: 0.85rem;
   color: var(--muted);
 }
 
@@ -267,6 +276,10 @@ footer.site-footer {
 }
 
 @media (max-width: 480px) {
+  .headshot-col {
+    width: 140px;
+  }
+
   .about img.headshot {
     width: 140px;
     height: 140px;
