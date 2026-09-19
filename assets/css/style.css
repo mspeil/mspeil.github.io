@@ -47,13 +47,16 @@ header.site-header h1 {
 
 .social-icons {
   display: flex;
-  gap: 14px;
+  gap: 6px;
 }
 
 .social-icons a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   color: var(--muted);
-  line-height: 0;
 }
 
 .social-icons a:hover {
