@@ -31,18 +31,18 @@ header.site-header {
 }
 
 header.site-header h1 {
-  margin: 0;
+  margin: 0 0 20px;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
-.header-top {
+.nav-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: space-between;
+  gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 .social-icons {

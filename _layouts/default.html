@@ -13,8 +13,9 @@
 <body>
   <div class="wrap">
     <header class="site-header">
-      <div class="header-top">
-        <h1>{{ site.title }}</h1>
+      <h1>{{ site.title }}</h1>
+      <div class="nav-row">
+        {% include nav.html %}
         <div class="social-icons">
           <a href="mailto:mmspeil24@gmail.com" aria-label="Email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,7 +32,6 @@
           </a>
         </div>
       </div>
-      {% include nav.html %}
     </header>
 
     {{ content }}
