@@ -31,10 +31,39 @@ header.site-header {
 }
 
 header.site-header h1 {
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  display: block;
+  color: var(--muted);
+  line-height: 0;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
 }
 
 .site-nav {
