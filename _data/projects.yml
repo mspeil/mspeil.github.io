@@ -30,8 +30,13 @@
     - Game/Level Designer
     - Narrative/Script writer
   blurb: >
-    A short paragraph describing the project, your contributions, and
-    anything notable about how it came together. Swap this for your own text.
+    Trash Panda was my first experience taking a game from concept to submission. During a
+    nine-day jam, I partnered with a programmer to build an ambitious platformer featuring
+    multiple mechanics and settings. I designed levels and gameplay while filling whatever gaps
+    the project demanded, including sourcing visual assets, sound effects, and music and writing
+    dialogue. Our scope exceeded what two people could fully polish in nine days, but the
+    experience taught me invaluable lessons about prioritization and adaptability. The finished
+    game retained a distinct charm that reflected the passion we brought to making it.
 
 - name: "Placeholder Project Three"
   itch_url: "https://your-username.itch.io/project-three"
