@@ -51,6 +51,10 @@ nav: games
         </div>
       </div>
 
+      {% if project.description %}
+      <p class="game-description">{{ project.description }}</p>
+      {% endif %}
+
       {% if project.blurb %}
       <p class="blurb">{{ project.blurb }}</p>
       {% endif %}

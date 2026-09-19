@@ -2,6 +2,7 @@
 # (drop the file there) or a full https:// URL to an image hosted elsewhere.
 #
 # primary_roles is a list (add/remove "- Role" lines freely).
+# description is a short blurb about the game itself; blurb is about your contributions.
 # result is optional -- delete the line entirely if a project has nothing to report.
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
@@ -12,6 +13,9 @@
     - Producer
     - Game/Level Designer
     - Additional Programmer
+  description: >
+    An up-scrolling platformer about Lua, a wingless fairy climbing the ailing Great Tree to help
+    her best friend heal it and rediscover hope. Meet helpful spirits who aid your ascent.
   blurb: >
     During an intensive two-week game jam, I led a five-person multidisciplinary team, working
     alongside an artist, a programmer, a composer and sound designer, and a narrative writer. In
@@ -30,6 +34,10 @@
     - Producer
     - Game/Level Designer
     - Narrative/Script Writer
+  description: >
+    A narrative-driven 2D puzzle-platformer about a raccoon pursuing the better life all raccoons
+    deserve. Armed with a wad of chewing gum, float, stick, and whip through the suburbs while
+    discovering what life is really about.
   blurb: >
     Trash Panda was my first experience taking a game from concept to submission. During a
     nine-day jam, I partnered with a programmer friend to build an ambitious platformer featuring

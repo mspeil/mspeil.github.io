@@ -235,6 +235,12 @@ header.site-header h1 {
   line-height: 1.4;
 }
 
+.project-item .game-description {
+  margin: 20px 0 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .project-item .blurb {
   margin: 20px 0 0;
 }
