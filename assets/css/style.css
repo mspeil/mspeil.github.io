@@ -94,10 +94,13 @@ header.site-header h1 {
 
 /* About / intro section */
 .about {
+  margin-bottom: 60px;
+}
+
+.about-row {
   display: flex;
   gap: 32px;
   align-items: flex-start;
-  margin-bottom: 60px;
   flex-wrap: wrap;
 }
 
@@ -126,12 +129,10 @@ header.site-header h1 {
 }
 
 .tech-kit {
-  margin: 32px 0 0;
-  width: 200px;
+  margin: 24px 0 0;
   text-align: left;
   font-size: 0.85rem;
   color: var(--muted);
-  overflow-wrap: break-word;
 }
 
 /* Projects list */
@@ -325,10 +326,6 @@ footer.site-footer {
   .about img.headshot {
     width: 140px;
     height: 140px;
-  }
-
-  .tech-kit {
-    width: 140px;
   }
 
   .project-thumb {
