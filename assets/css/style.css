@@ -63,6 +63,10 @@ header.site-header h1 {
   color: var(--accent);
 }
 
+.social-icons a.icon-email {
+  transform: translateY(1px);
+}
+
 .social-icons svg {
   width: 20px;
   height: 20px;
