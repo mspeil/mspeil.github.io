@@ -213,6 +213,11 @@ header.site-header h1 {
 }
 
 /* Economics page */
+.econ-intro {
+  max-width: 640px;
+  margin: 0 0 48px;
+}
+
 .econ-section {
   margin-bottom: 48px;
 }
