@@ -222,7 +222,7 @@ header.site-header h1 {
 }
 
 .media-caption {
-  margin-top: 8px;
+  margin: 8px 0 0;
   font-size: 0.75rem;
   line-height: 1.4;
   color: var(--muted);
