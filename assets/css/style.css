@@ -228,6 +228,14 @@ header.site-header h1 {
   color: var(--muted);
 }
 
+.project-media .media-caption {
+  text-align: center;
+}
+
+.project-media .media-img {
+  margin: 0 auto;
+}
+
 .media-caption a {
   color: inherit;
   text-decoration: none;
