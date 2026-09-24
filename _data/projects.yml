@@ -7,8 +7,8 @@
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 # itch_url is optional -- without it the title and thumbnail are not links.
 # gif (with image_credit / gif_caption) switches the left column to a stacked
-#   image + GIF layout (full image shown, no crop). bullets is a plain bullet
-#   list with no "Primary Roles" label, used instead of primary_roles.
+#   image + GIF layout (scaled to fit the thumbnail box, never cropped).
+# contributions is a bullet list shown in place of the blurb paragraph.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -53,8 +53,12 @@
     game retained a distinct charm that reflected the passion we brought to making it.
   result: "22nd place out of 137 submissions in <em>Fun</em> category"
 
-- name: "Unannounced Indie Project · In Development"
+- name: "Unannounced Indie Project - In Development"
   image: "/assets/img/projects/character-sheet-placeholder.svg"
+  primary_roles:
+    - Director
+    - Producer
+    - Game/Level Designer
   image_credit:
     text: "Character concept art by"
     name: "Konrad Messyasz"
@@ -64,7 +68,7 @@
   description: >
     A fast-paced 2D action adventure game. Platform, fight, and explore using a unique
     wall-running mechanic that blends side-view and top-down perspectives.
-  bullets:
+  contributions:
     - "Defined the project’s creative pillars and core gameplay loop."
     - "Source and manage external artists and animators, establishing creative direction, defining deliverables, and guiding commissioned work through feedback and revision."
     - "Translate design goals into playable features, building and iterating on levels and implementing mechanics in collaboration with the project’s co-developer."

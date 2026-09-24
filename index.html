@@ -55,16 +55,6 @@ nav: games
           <p class="result">{{ project.result }}</p>
           {% endif %}
 
-          {% if project.bullets %}
-          <div class="roles contributions">
-            <ul>
-              {% for item in project.bullets %}
-              <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-
           {% if project.primary_roles %}
           <div class="roles primary-roles">
             <span class="roles-label">Primary Roles</span>
@@ -84,6 +74,14 @@ nav: games
 
       {% if project.blurb %}
       <p class="blurb">{{ project.blurb }}</p>
+      {% endif %}
+
+      {% if project.contributions %}
+      <ul class="contributions">
+        {% for item in project.contributions %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
       {% endif %}
 
       {% if project.gdd_url %}
