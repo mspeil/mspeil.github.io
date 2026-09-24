@@ -199,14 +199,7 @@ header.site-header h1 {
 .project-media {
   flex-shrink: 0;
   width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   align-self: flex-start;
-}
-
-.media-figure {
-  margin: 0;
 }
 
 .media-img {

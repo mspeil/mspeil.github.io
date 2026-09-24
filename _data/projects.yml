@@ -6,11 +6,17 @@
 # result is optional -- delete the line entirely if a project has nothing to report.
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 # itch_url is optional -- without it the title and thumbnail are not links.
-# image_credit switches the thumbnail to an uncropped figure with an artist credit.
+# image_credit adds a caption under the image (text + name; url is optional and
+#   makes the name a link).
+# image_fit: contain shows the image scaled to fit, uncropped and unlinked.
 # gif (with gif_caption) is shown as a larger figure below the blurb.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
+  image_credit:
+    text: "Environment Art by"
+    name: "Alyssa Foote"
+    url: "https://alyssafoote.com/"
   primary_roles:
     - Director
     - Producer
@@ -33,6 +39,9 @@
 - name: "Trash Panda - Godot Wild Jam #89"
   itch_url: "https://pasta-town.itch.io/trash-panda"
   image: "/assets/img/projects/thumbnail2.png"
+  image_credit:
+    text: "Title Screen Background by"
+    name: "Jennifer Yang"
   primary_roles:
     - Director
     - Producer
@@ -54,6 +63,7 @@
 
 - name: "Unannounced Indie Project - In Development"
   image: "/assets/img/projects/character-sheet-placeholder.svg"
+  image_fit: contain
   primary_roles:
     - Director
     - Producer

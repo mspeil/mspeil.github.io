@@ -28,18 +28,18 @@ nav: games
     {% for project in site.data.projects %}
     <article class="project-item">
       <div class="project-top">
-        {% if project.image_credit %}
         <div class="project-media">
-          <figure class="media-figure">
-            <img class="media-img" src="{{ project.image | relative_url }}" alt="{{ project.name }} character concept art">
-            <figcaption class="media-caption">{{ project.image_credit.text }} <a href="{{ project.image_credit.url }}" target="_blank" rel="noopener">{{ project.image_credit.name }}</a></figcaption>
-          </figure>
+          {% if project.image_fit == "contain" %}
+          <img class="media-img" src="{{ project.image | relative_url }}" alt="{{ project.name }} artwork">
+          {% else %}
+          <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
+          </a>
+          {% endif %}
+          {% if project.image_credit %}
+          <p class="media-caption">{{ project.image_credit.text }} {% if project.image_credit.url %}<a href="{{ project.image_credit.url }}" target="_blank" rel="noopener">{{ project.image_credit.name }}</a>{% else %}{{ project.image_credit.name }}{% endif %}</p>
+          {% endif %}
         </div>
-        {% else %}
-        <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
-        </a>
-        {% endif %}
         <div class="project-info">
           <h3>{% if project.itch_url %}<a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
 
