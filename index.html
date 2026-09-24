@@ -75,15 +75,6 @@ nav: games
       {% if project.blurb %}
       <p class="blurb">{{ project.blurb }}</p>
       {% endif %}
-
-      {% if project.contributions %}
-      <ul class="contributions">
-        {% for item in project.contributions %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-
       {% if project.gdd_url %}
       <p class="gdd-link"><a href="{{ project.gdd_url | relative_url }}" target="_blank" rel="noopener">Game Design Document</a></p>
       {% endif %}

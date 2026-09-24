@@ -288,16 +288,6 @@ header.site-header h1 {
 .project-item .blurb {
   margin: 20px 0 0;
 }
-
-.project-item .contributions {
-  margin: 20px 0 0;
-  padding-left: 1.2em;
-}
-
-.project-item .contributions li {
-  margin-bottom: 6px;
-}
-
 .project-info .result {
   margin: 0 0 14px;
   font-weight: 600;

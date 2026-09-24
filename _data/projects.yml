@@ -8,7 +8,6 @@
 # itch_url is optional -- without it the title and thumbnail are not links.
 # gif (with image_credit / gif_caption) switches the left column to a stacked
 #   image + GIF layout (scaled to fit the thumbnail box, never cropped).
-# contributions is a bullet list shown in place of the blurb paragraph.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -68,7 +67,12 @@
   description: >
     A fast-paced 2D action adventure game. Platform, fight, and explore using a unique
     wall-running mechanic that blends side-view and top-down perspectives.
-  contributions:
-    - "Defined the project’s creative pillars and core gameplay loop."
-    - "Source and manage external artists and animators, establishing creative direction, defining deliverables, and guiding commissioned work through feedback and revision."
-    - "Translate design goals into playable features, building and iterating on levels and implementing mechanics in collaboration with the project’s co-developer."
+  blurb: >
+    I am developing this original 2D action-adventure game with a close collaborator. I defined
+    the project’s creative pillars and core gameplay loop, and I work alongside my co-developer
+    to translate those goals into playable features by building and iterating on levels and
+    implementing mechanics. Beyond our core team, I source and manage external artists and
+    animators, establishing creative direction, defining deliverables, and guiding commissioned
+    work through feedback and revision. Working across a longer development cycle, I balance
+    hands-on design and implementation with the broader demands of creative direction and
+    production.
