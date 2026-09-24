@@ -6,8 +6,8 @@
 # result is optional -- delete the line entirely if a project has nothing to report.
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 # itch_url is optional -- without it the title and thumbnail are not links.
-# gif (with image_credit / gif_caption) switches the left column to a stacked
-#   image + GIF layout (scaled to fit the thumbnail box, never cropped).
+# image_credit switches the thumbnail to an uncropped figure with an artist credit.
+# gif (with gif_caption) is shown as a larger figure below the blurb.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -68,8 +68,7 @@
     A fast-paced 2D action adventure game. Platform, fight, and explore using a unique
     wall-running mechanic that blends side-view and top-down perspectives.
   blurb: >
-    I am developing this original 2D action-adventure game with a close collaborator. I defined
-    the project’s creative pillars and core gameplay loop, and I work alongside my co-developer
+    I defined the project’s creative pillars and core gameplay loop, and I work alongside my co-developer
     to translate those goals into playable features by building and iterating on levels and
     implementing mechanics. Beyond our core team, I source and manage external artists and
     animators, establishing creative direction, defining deliverables, and guiding commissioned

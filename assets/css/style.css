@@ -219,6 +219,15 @@ header.site-header h1 {
   border: 1px solid var(--border);
 }
 
+.gameplay-figure {
+  margin: 24px 0 0;
+}
+
+.gameplay-figure .media-img {
+  max-width: min(100%, 440px);
+  max-height: 330px;
+}
+
 .media-caption {
   margin-top: 8px;
   font-size: 0.75rem;
