@@ -28,14 +28,41 @@ nav: games
     {% for project in site.data.projects %}
     <article class="project-item">
       <div class="project-top">
+        {% if project.gif %}
+        <div class="project-media">
+          <figure class="media-figure">
+            <img class="media-img" src="{{ project.image | relative_url }}" alt="{{ project.name }} character concept art">
+            {% if project.image_credit %}
+            <figcaption class="media-caption">{{ project.image_credit.text }} <a href="{{ project.image_credit.url }}" target="_blank" rel="noopener">{{ project.image_credit.name }}</a></figcaption>
+            {% endif %}
+          </figure>
+          <figure class="media-figure">
+            <img class="media-img" src="{{ project.gif | relative_url }}" alt="{{ project.name }} gameplay clip">
+            {% if project.gif_caption %}
+            <figcaption class="media-caption">{{ project.gif_caption }}</figcaption>
+            {% endif %}
+          </figure>
+        </div>
+        {% else %}
         <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
           <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
         </a>
+        {% endif %}
         <div class="project-info">
-          <h3><a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
+          <h3>{% if project.itch_url %}<a href="{{ project.itch_url }}" target="_blank" rel="noopener">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
 
           {% if project.result %}
           <p class="result">{{ project.result }}</p>
+          {% endif %}
+
+          {% if project.bullets %}
+          <div class="roles contributions">
+            <ul>
+              {% for item in project.bullets %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
           {% endif %}
 
           {% if project.primary_roles %}

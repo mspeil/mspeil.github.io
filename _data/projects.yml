@@ -5,6 +5,10 @@
 # description is a short blurb about the game itself; blurb is about your contributions.
 # result is optional -- delete the line entirely if a project has nothing to report.
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
+# itch_url is optional -- without it the title and thumbnail are not links.
+# gif (with image_credit / gif_caption) switches the left column to a stacked
+#   image + GIF layout (full image shown, no crop). bullets is a plain bullet
+#   list with no "Primary Roles" label, used instead of primary_roles.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -49,11 +53,18 @@
     game retained a distinct charm that reflected the passion we brought to making it.
   result: "22nd place out of 137 submissions in <em>Fun</em> category"
 
-- name: "Placeholder Project Three"
-  itch_url: "https://your-username.itch.io/project-three"
-  image: "/assets/img/projects/placeholder3.svg"
-  primary_roles:
-    - Designer
-  blurb: >
-    A short paragraph describing the project, your contributions, and
-    anything notable about how it came together. Swap this for your own text.
+- name: "Unannounced Indie Project · In Development"
+  image: "/assets/img/projects/character-sheet-placeholder.svg"
+  image_credit:
+    text: "Character concept art by"
+    name: "Konrad Messyasz"
+    url: "https://www.messyrad.com/"
+  gif: "/assets/img/projects/gameplay-placeholder.svg"
+  gif_caption: "An early blockout used to test the game’s central movement mechanic and traversal feel. All visuals are placeholder."
+  description: >
+    A fast-paced 2D action adventure game. Platform, fight, and explore using a unique
+    wall-running mechanic that blends side-view and top-down perspectives.
+  bullets:
+    - "Defined the project’s creative pillars and core gameplay loop."
+    - "Source and manage external artists and animators, establishing creative direction, defining deliverables, and guiding commissioned work through feedback and revision."
+    - "Translate design goals into playable features, building and iterating on levels and implementing mechanics in collaboration with the project’s co-developer."
