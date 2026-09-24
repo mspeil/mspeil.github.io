@@ -14,7 +14,7 @@
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
   image_credit:
-    text: "Environment Art by"
+    text: "Environment art by"
     name: "Alyssa Foote"
     url: "https://alyssafoote.com/"
   primary_roles:
@@ -40,7 +40,7 @@
   itch_url: "https://pasta-town.itch.io/trash-panda"
   image: "/assets/img/projects/thumbnail2.png"
   image_credit:
-    text: "Title Screen Background by"
+    text: "Title screen background by"
     name: "Jennifer Yang"
   primary_roles:
     - Director
