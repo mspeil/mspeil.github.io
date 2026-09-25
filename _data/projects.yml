@@ -22,6 +22,8 @@
     - Producer
     - Game/Level Designer
     - Additional Programmer
+  tech:
+    - "Engine: Godot"
   description: >
     An up-scrolling climbing platformer about Lua, a wingless fairy scaling the ailing Great Tree to help
     her best friend heal it and rediscover hope. Along the way, meet friendly spirits who will aid
@@ -47,6 +49,8 @@
     - Producer
     - Game/Level Designer
     - Narrative/Script Writer
+  tech:
+    - "Engine: Godot"
   description: >
     A narrative-driven 2D puzzle-platformer about a raccoon pursuing the better life all raccoons
     deserve. Armed with a wad of chewing gum, float, stick, and whip through the suburbs while
@@ -69,6 +73,8 @@
     - Producer
     - Game/Level Designer
     - Additional Programmer
+  tech:
+    - "Engine: Godot"
   image_credit:
     text: "Character concept art by"
     name: "Konrad Messyasz"

@@ -57,6 +57,17 @@ nav: games
             </ul>
           </div>
           {% endif %}
+
+          {% if project.tech %}
+          <div class="roles tech-details">
+            <span class="roles-label">Tech</span>
+            <ul>
+              {% for item in project.tech %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
         </div>
       </div>
 

@@ -245,7 +245,7 @@ header.site-header h1 {
 }
 
 .project-info h3 {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   font-size: 1.2rem;
 }
 
@@ -260,6 +260,10 @@ header.site-header h1 {
 
 .roles {
   margin-bottom: 12px;
+}
+
+.project-info .roles:last-child {
+  margin-bottom: 0;
 }
 
 .roles-label {
@@ -291,7 +295,7 @@ header.site-header h1 {
   margin: 20px 0 0;
 }
 .project-info .result {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   font-weight: 600;
   color: var(--accent);
 }
