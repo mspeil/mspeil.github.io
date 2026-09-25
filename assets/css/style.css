@@ -284,6 +284,7 @@ header.site-header h1 {
 .roles li.role-meta {
   list-style: none;
   font-style: italic;
+  margin: 10px 0 0 -0.88em;
 }
 
 .project-item .game-description {
