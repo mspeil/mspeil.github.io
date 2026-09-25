@@ -54,10 +54,15 @@ nav: games
               {% for role in project.primary_roles %}
               <li>{{ role }}</li>
               {% endfor %}
-              {% for item in project.tech %}
-              <li class="role-meta">{{ item }}</li>
-              {% endfor %}
             </ul>
+          </div>
+          {% endif %}
+
+          {% if project.tech %}
+          <div class="tech-lines">
+            {% for item in project.tech %}
+            <p>{{ item }}</p>
+            {% endfor %}
           </div>
           {% endif %}
         </div>

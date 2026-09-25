@@ -6,7 +6,8 @@
 # result is optional -- delete the line entirely if a project has nothing to report.
 # gdd_url is optional too -- points at a PDF you've dropped in /assets/docs/.
 # itch_url is optional -- without it the title and thumbnail are not links.
-# tech lines show as plain italic lines directly under the roles list.
+# tech lines show as plain italic lines at the bottom of the text column,
+#   level with the image caption.
 # image_credit adds a caption under the image (text + name; url is optional and
 #   makes the name a link).
 # image_fit: contain shows the image scaled to fit, uncropped and unlinked.

@@ -242,6 +242,8 @@ header.site-header h1 {
   flex: 1;
   min-width: 260px;
   margin-top: -6px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-info h3 {
@@ -281,10 +283,17 @@ header.site-header h1 {
   line-height: 1.4;
 }
 
-.roles li.role-meta {
-  list-style: none;
+.tech-lines {
+  margin-top: auto;
+  padding: 10px 0 0 0.22em;
   font-style: italic;
-  margin: 10px 0 0 -0.88em;
+}
+
+.tech-lines p {
+  margin: 0;
+  line-height: 1.4;
+  position: relative;
+  top: 1.6px;
 }
 
 .project-item .game-description {
