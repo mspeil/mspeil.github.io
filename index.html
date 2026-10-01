@@ -30,7 +30,9 @@ nav: games
       <div class="project-top">
         <div class="project-media">
           {% if project.image_fit == "contain" %}
-          <img class="media-img" src="{{ project.image | relative_url }}" alt="{{ project.name }} artwork">
+          <button type="button" class="media-lightbox-trigger" data-lightbox-src="{{ project.image | relative_url }}" data-lightbox-alt="{{ project.name }} artwork">
+            <img class="media-img" src="{{ project.image | relative_url }}" alt="{{ project.name }} artwork">
+          </button>
           {% else %}
           <a class="project-thumb" href="{{ project.itch_url }}" target="_blank" rel="noopener">
             <img src="{{ project.image | relative_url }}" alt="{{ project.name }} cover art">
@@ -101,3 +103,41 @@ nav: games
     {% endfor %}
   </div>
 </section>
+
+<div class="lightbox" id="lightbox" hidden>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.media-lightbox-trigger').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openLightbox(btn.getAttribute('data-lightbox-src'), btn.getAttribute('data-lightbox-alt'));
+      });
+    });
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+  })();
+</script>
