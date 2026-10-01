@@ -68,7 +68,7 @@
   result: "22nd place out of 137 submissions in <em>Fun</em> category"
 
 - name: "Unannounced Indie Project - In Development"
-  image: "/assets/img/projects/character-sheet-placeholder.svg"
+  image: "/assets/img/projects/character-sheet.webp"
   image_fit: contain
   primary_roles:
     - Director
