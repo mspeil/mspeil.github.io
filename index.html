@@ -76,7 +76,16 @@ nav: games
       <p class="blurb">{{ project.blurb }}</p>
       {% endif %}
 
-      {% if project.gif %}
+      {% if project.video %}
+      <figure class="gameplay-figure">
+        <video class="media-img" controls preload="metadata" {% if project.video_poster %}poster="{{ project.video_poster | relative_url }}"{% endif %}>
+          <source src="{{ project.video | relative_url }}" type="video/mp4">
+        </video>
+        {% if project.gif_caption %}
+        <figcaption class="media-caption">{{ project.gif_caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% elsif project.gif %}
       <figure class="gameplay-figure">
         <img class="media-img" src="{{ project.gif | relative_url }}" alt="{{ project.name }} gameplay clip">
         {% if project.gif_caption %}

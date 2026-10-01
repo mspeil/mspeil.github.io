@@ -11,7 +11,8 @@
 # image_credit adds a caption under the image (text + name; url is optional and
 #   makes the name a link).
 # image_fit: contain shows the image scaled to fit, uncropped and unlinked.
-# gif (with gif_caption) is shown as a larger figure below the blurb.
+# video (mp4) + optional video_poster is a playable clip shown below the blurb,
+#   with gif_caption as its caption. gif (image/svg) is the fallback if no video.
 - name: "Lifting Spirits - Macrow Spring Jam 2026"
   itch_url: "https://table3games.itch.io/lifting-spirits"
   image: "/assets/img/projects/thumbnail1.png"
@@ -81,7 +82,8 @@
     text: "Character concept art by"
     name: "Konrad Messyasz"
     url: "https://www.messyrad.com/"
-  gif: "/assets/img/projects/gameplay-placeholder.svg"
+  video: "/assets/video/projects/unannounced-gameplay.mp4"
+  video_poster: "/assets/img/projects/unannounced-gameplay-poster.jpg"
   gif_caption: "An early blockout used to test the game’s central movement mechanic and traversal feel. All visuals are placeholder."
   description: >
     A fast-paced 2D action-adventure game. Platform, fight, and explore using a unique
